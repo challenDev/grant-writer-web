@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 # Load prompt
-with open("prompts/grant_template.txt", "r", encoding="utf-8") as f:
+with open("prompts/grants_template.txt", "r", encoding="utf-8") as f:
     PROMPT_TEMPLATE = f.read()
 
 # Initialize Groq client from secrets
