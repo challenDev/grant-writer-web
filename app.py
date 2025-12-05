@@ -5,6 +5,7 @@ from docx import Document
 import requests
 import json
 import io
+from collections import defaultdict
 
 # Page config
 st.set_page_config(
@@ -87,18 +88,21 @@ if submitted:
                     "populations": "",
                     "annual_budget": "",
                     "executive_director": "",
+                    "mission": mission,
                     "need_statement": need_statement,
                     "project_description": project_description,
-                    "goals_objectives": goals_objectives,
-                    "timeline": timeline,
-                    "budget_narrative": budget_narrative,
-                    "evaluation_plan": evaluation_plan,
-                    "sustainability": sustainability,
+                    "goals_objectives": goals_objectives or "",
+                    "timeline": timeline or "",
+                    "budget_narrative": budget_narrative or "",
+                    "evaluation_plan": evaluation_plan or "",
+                    "sustainability": sustainability or "",
                     "funder_priorities": funder_priorities or "mission alignment and impact",
                     "organizational_capacity": organizational_capacity or "Strong track record of impact"
                 }
 
-                prompt = PROMPT_TEMPLATE.format(**data)
+                # Use a defaultdict so missing keys in the template don't raise KeyError
+                safe_data = defaultdict(str, data)
+                prompt = PROMPT_TEMPLATE.format_map(safe_data)
 
                 try:
                     # Call Groq API via requests
