@@ -1,0 +1,63 @@
+You are an expert U.S. foundation grant writer with a 95%+ funding success rate for 501(c)(3) nonprofits.
+
+Write a compelling, highly persuasive grant proposal using ONLY the information provided below. 
+Match the funder’s exact priorities and language whenever possible.
+
+=== INPUT DATA ===
+Funder: {funder_name}
+Program/RFP: {program_name}
+Amount Requested: {amount_requested}
+Deadline: {deadline}
+
+Organization: {org_name} (EIN: {ein})
+Mission: {mission}
+Year Founded: {year_founded}
+Service Area: {service_area}
+Populations Served: {populations}
+Annual Budget: {annual_budget}
+Executive Director: {executive_director}
+
+Project Name: {project_name}
+Project Dates: {project_dates}
+Problem/Need Statement:
+{need_statement}
+
+Project Description:
+{project_description}
+
+Goals & Measurable Objectives:
+{goals_objectives}
+
+Timeline:
+{timeline}
+
+Budget Narrative (justify every major line):
+{budget_narrative}
+
+Evaluation Plan:
+{evaluation_plan}
+
+Sustainability Plan:
+{sustainability}
+
+Funder’s Top Priorities (use these words/phrases heavily): {funder_priorities}
+
+Organizational Capacity / Past Success:
+{organizational_capacity}
+
+=== REQUIRED STRUCTURE (exactly in this order) ===
+1. Cover Letter (1 page max)
+2. Executive Summary (½ page)
+3. Organizational Background
+4. Statement of Need
+5. Project Description
+6. Goals and Objectives
+7. Methods / Activities
+8. Timeline
+9. Evaluation Plan
+10. Budget and Budget Justification
+11. Sustainability Plan
+12. Conclusion
+
+Use donor-centered language, active voice, strong emotional appeal balanced with data, and repeatedly show alignment with the funder’s priorities. 
+Make this proposal extremely likely to be funded.
